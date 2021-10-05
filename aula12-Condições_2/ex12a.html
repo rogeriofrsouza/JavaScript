@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Tempo</title>
+    <style>
+        h1 {
+            font: 40px;
+            color: rgb(252, 178, 42);
+            background: darkred;
+        }
+        body {
+            color: lightblue;
+            background: rgb(37, 37, 37);
+            text-align: center;
+            font: 30px normal Arial 
+        }
+        section{
+            color: lightcoral;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consultar data e hora</h1>
+    <p>Olá! Sejá muito bem-vindo(a) ao site do tempo!</p>
+    <p>Gostaria de checar o horário e dia da semana do seu sistema? <input type="button" value="Checar" onclick='checar()'></p>
+    <section>
+        <div id='horario'></div>
+        <div id='data'></div>
+    </section>
+
+    <script>
+        function checar() {
+            var agora = new Date()
+            var hora = agora.getHours()
+            var minuto = agora.getMinutes()
+            var r1 = window.document.getElementById('horario')
+
+            if (minuto >= 10) {
+                r1.innerHTML = `Agora são exatamente ${hora}:${minuto} \u{23F2}`    
+            } else if (minuto < 10) {
+                r1.innerHTML = `Agora são exatamente ${hora}:0${minuto} \u{23F2}`
+            }
+            
+            var diaSem = agora.getDay()
+            var r2 = window.document.querySelector('div#data')
+
+            switch(diaSem) {
+                case 0:
+                    r2.innerHTML = 'Hoje é domingo. '
+                    break
+                case 1:
+                    r2.innerHTML = 'Hoje é segunda-feira. '
+                    break
+                case 2:
+                    r2.innerHTML = 'Hoje é terça-feira. '
+                    break
+                case 3:
+                    r2.innerHTML = 'Hoje é quarta-feira. '
+                    break
+                case 4:
+                    r2.innerHTML = 'Hoje é quinta-feira. '
+                    break
+                case 5:
+                    r2.innerHTML = 'Hoje é sexta-feira. '
+                    break
+                default:
+                    r2.innerHTML = 'Hoje é sábado. '
+            }
+            r2.innerHTML += `\u{1F4C5}<br>`
+
+            if (hora < 6) {
+                r2.innerHTML += 'Tenha uma <strong>boa madrugada! \u{1F309}</strong>'
+            } else if (hora < 12) {
+                r2.innerHTML += 'Tenha um <strong>bom dia!</strong> \u{1F305}'
+            } else if (hora < 18) {
+                r2.innerHTML += '<Tenha uma strong>boa tarde!</strong> \u{1F307}'
+            } else {
+                r2.innerHTML += `Tenha uma <strong>boa noite!</strong> \u{1F303}`
+            }     
+        }
+    </script>
+</body>
+</html>

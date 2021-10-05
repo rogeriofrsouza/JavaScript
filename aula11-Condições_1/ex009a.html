@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroporto Guanabara</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+            background: lightblue
+        } 
+        div#res{
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Análise de vôo</h1>
+    Digite sua nacionalidade: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Analisar" onclick="analise()">
+    <div id ="res"></div>
+
+    <script>
+        function analise(){
+            var nact = window.document.getElementById("txtnac")
+            var res = window.document.querySelector("div#res")
+            nac = nact.value
+
+            res.innerHTML = `Vivendo em ${nac} voce é: `
+            if(nac == 'Brasil'){
+                res.innerHTML += '<strong>Brasileiro</strong>'
+            }else{
+                res.innerHTML += '<strong>Estrangeiro</strong>'
+            }
+        }
+    </script>
+</body>
+</html>

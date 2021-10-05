@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justiça Eleitoral do Brasil</title>
+    <style>
+        body {
+            font: 20px Arial;    
+        }
+        div#res {
+            line-height: 200px;
+            font: 25px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Análise de idade</h1>
+    <p>Digite sua idade: <input type="number" name="txtid" id="txtid" min="0"><input type="button" value="Analisar" onclick=analisar()></p>
+    <div id='res'></div>
+
+    <script>
+        function analisar() {
+            var idade = window.document.getElementById("txtid")
+            var r = window.document.querySelector("div#res")
+            var id = Number(idade.value)
+
+            if (id <= 0 || idade.value.length == 0 || id > 120) {
+                r.innerHTML = '[ERRO]: Tente novamente!' 
+            } else if (id > 1) {
+                r.innerHTML = `Você tem ${id} anos. `
+                if (id < 16) {
+                    r.innerHTML += 'Voto <strong>não permitido</strong>!'
+                } else if (id < 18 || id > 65) {
+                    r.innerHTML += 'Voto <strong>opcional</strong>!'
+                } else {
+                r.innerHTML += 'Voto <strong>obrigatório</strong>!'
+                }
+            } else if (id == 1) {
+                r.innerHTML = `Você tem ${id} ano. Voto <strong>não permitido</strong>!`
+            } 
+        }
+    </script>
+</body>
+</html>
