@@ -15,5 +15,7 @@ function tabuada() {
             item.value = `tab${c}`  // Valor importante para outras linguagens
             tab.appendChild(item)
         }
+        num.value = ''
+        num.focus()
     }
 }   

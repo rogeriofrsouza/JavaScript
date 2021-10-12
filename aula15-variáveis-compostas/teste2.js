@@ -1,11 +1,10 @@
-let num = [10, 25, 36, 34, 25, 180]
+let num = [10, 45, 36, 64, 25, 18]
 num.sort()
 console.log(num)
 
 let maior = num[0]
 let menor = num[0]
-let pares = 0
-let impares = 0
+let pares = 0, impares = 0
 
 for (let pos in num) {
 //for (let pos=0; pos<10; pos++) {
@@ -23,4 +22,4 @@ for (let pos in num) {
 }
 
 console.log(`Maior número: ${maior} | Menor número: ${menor}`)
-console.log(`Qtd de pares: ${pares} | Ímpares: ${impares}`)
+console.log(`Qtd de pares: ${pares} | Ímpares: ${impares} | Total: ${num.length}`)

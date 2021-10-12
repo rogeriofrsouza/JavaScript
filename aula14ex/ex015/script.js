@@ -26,12 +26,12 @@ function contar() {
         if (i < f) {
             // Contagem crescente
             for (var c = i; c <= f; c += p) {
-                res.innerHTML += `${c}\u{1F499} `
+                res.innerHTML += `${c}\u{1F449} `
             }
         } else if (i > f) {
             //Contagem regressiva
             for (var c = i; c >= f; c -= p) {
-                res.innerHTML += `${c}\u{1F499} `
+                res.innerHTML += `${c}\u{1F449} `
             }
         }
         res.innerHTML += `\u{1F3C1}`

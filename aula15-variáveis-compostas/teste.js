@@ -3,7 +3,7 @@ let idades = [21, 25, 39, 16]
 
 nomes[4] = 'Marcela'
 idades[4] = 32
-nomes.push('Jéssica')
+nomes.push('Carlos')
 idades.push(45)
 
 console.log(`Encontrei ${nomes.length} nomes/idades :)`)

@@ -39,12 +39,13 @@ function adicionar() {
     fnum.value = ''
     fnum.focus()
 }       
-//Finalizar com os nºs do vetor
+//Cálculos com os nºs do vetor
 function finalizar() {
     if (valores.length == 0) {
         window.alert('Adicione valores antes de finalizar!')
     } else if (mudou == false) {
-        let maior = menor = valores[0], soma = media = 0;
+        let maior = menor = valores[0], soma = media = 0
+        
         //Iteração no vetor
         for (let cont in valores) {
             if (valores[cont] > maior) {
@@ -57,6 +58,7 @@ function finalizar() {
         }
         media = soma / valores.length
         mudou = true
+        
         //Prints
         res.innerHTML += `<p>Ao todo temos ${valores.length} números cadastrados.</p>`
         res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`

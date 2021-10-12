@@ -8,14 +8,21 @@ function carregar() {
     var dia = data.getDate()
     var mes = data.getMonth()
     var ano = data.getFullYear()
-
     mes += 1
+
+    //Horário
     if (minuto >= 10) {
         msg.innerHTML = `Horário atual ${hora}:${minuto}<br/>`    
     } else {
         msg.innerHTML = `Horário atual ${hora}:0${minuto}<br/>`
     }
-    msg.innerHTML += `Data: ${dia}/0${mes}/${ano}`
+
+    //Data
+    if (mes <= 10){
+        msg.innerHTML += `Data: ${dia}/${mes}/${ano}`    
+    } else {
+        msg.innerHTML += `Data: ${dia}/0${mes}/${ano}`
+    }
 
     if (hora >= 0 && hora < 6) {
         // Boa madrugada!
