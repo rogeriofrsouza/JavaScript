@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px; }
+    </style>
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+    <button onclick="calcular()">Clique para calcular</button>
+    <section id="res">
+        <p>O resultado vai aparecer aqui...</p>
+    </section>
+
+    <script>
+        function calcular() {
+            let res = window.document.querySelector('section#res')
+            let num = Number(window.prompt(`Digite um número:`))
+            res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${num}</strong>`
+            res.innerHTML += `<p><hr>`
+            res.innerHTML += `<p>O seu valor absoluto é <mark>${Math.abs(num)}</mark>`
+            res.innerHTML += `<p>A sua parte inteira é <mark>${Math.trunc(num)}</mark>`
+            res.innerHTML += `<p>O valor inteiro mais próximo é <mark>${Math.round(num)}</mark>`   //Arredonda para o valor mais próximo
+            res.innerHTML += `<p>A sua raíz quadrada é <mark>${Math.sqrt(num)}</mark>`
+            res.innerHTML += `<p>A sua raíz cúbica é <mark>${Math.cbrt(num)}</mark>`
+            res.innerHTML += `<p>O valor de ${num}² é <mark>${Math.pow(num, 2)}</mark>`
+            res.innerHTML += `<p>O valor de ${num}³ é <mark>${Math.pow(num, 3)}</mark>`
+        }
+    </script>
+</body>
+</html>
