@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de temperaturas</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px; }
+        div { margin-top: 20px; }
+    </style>
 </head>
 <body>
+    <h1>Conversor de Temperaturas</h1>
+    <button id="bt">Converter</button>
+    <div id="res">Clique no botão acima para iniciar...</div>
     
+    <script>
+        let b = window.document.querySelector('button#bt')
+        let res = window.document.getElementById('res')
+        b.addEventListener('click', converter)
+
+        function converter() {
+            let c = Number(window.prompt('Digite uma temperatura em °C (Celsius)'))   //° -> ctrl+alt+/
+            let k = c + 273
+            let f = 1.8 * c + 32
+
+            res.innerHTML = `<h2><strong>A temperatura de ${c.toLocaleString('pt-BR')}°C corresponde a...</strong></h2>`
+            res.innerHTML += '<hr/>'
+            res.innerHTML += `<p>${k.toLocaleString('pt-BR')}°K (Kelvin)</p>`
+            res.innerHTML += `<p>${f.toLocaleString('pt-BR')}°F (Fahrenheit)</p>`
+        }
+    </script>
 </body>
 </html>

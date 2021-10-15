@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor R$ -> US$</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px; }
+        div { margin-top: 20px; }
+        p { font-size: 15pt; }
+    </style>
+</head>
+<body>
+    <h1>Conversor R$ &rarr; US$</h1>   <!--- Seta para a direita -->
+    <button id="bt">Converter</button>
+    <div id="res">Clique no botão acima para iniciar</div>
+    
+    <script>
+        let dolar = Number(window.prompt('Antes de mais nada. Quanto está a cotação do dólar (US$) agora?'))
+        let bt = window.document.getElementById('bt')
+        let res = window.document.querySelector('div#res')
+        bt.addEventListener('click', converter)
+
+        function converter() {
+            let reais = Number(window.prompt('Quantos R$ você tem na carteira?'))
+            let valor_final = reais / dolar
+
+            res.innerHTML = `<h2>Com <mark>R$${reais.toLocaleString('pt-BR')}</mark> na carteira \u{1F4B0}</h2>\n`
+            res.innerHTML += `<h2>E na cotação atual de <mark>R$${dolar.toLocaleString('pt-BR')}</mark> por US$1,00 \u{1F4B5}</h2>`
+            res.innerHTML += '<hr/>'
+            res.innerHTML += `<p>Você consegue adquirir... <strong>US$${valor_final.toLocaleString('pt-BR')}</strong> \u{1F4B8}<p>`
+        }
+    </script>
+</body>
+</html>
