@@ -14,10 +14,12 @@
     <p>Escolha o limite final para a contagem a partir do 0 (digite apenas números positivos)</p>
 
     <section id="entrada">
-        <form action="#" method="get"></form>
-            <label for="fnum">Valor final: </label>
+        <form action="#" method="get">
+            <!-- O método GET envia os dados pela própria URL, durante a chamada -->
+            <label for="fnum">Valor final:</label>
             <input type="number" name ="num" id="fnum" placeholder="Apenas positivos">
-            <input type="submit" value="Contar" formaction="javascript:contagem()">
+            <input type="submit" value="Contar" formaction="javascript:contar()">
+            <!-- Ao usar o FORMACTION, é preciso colocar javascript: antes do nome da função -->
         </form>
     </section>
 
@@ -25,6 +27,6 @@
         <p>Preencha os dados acima e aperte o botão.</p>
     </section>
 
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

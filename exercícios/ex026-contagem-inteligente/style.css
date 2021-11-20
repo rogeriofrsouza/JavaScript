@@ -11,10 +11,10 @@ h1, h2, h3 {
 
 input {
     font-size: 12pt;
-    padding: 5px;
 }
 
 input[type=submit] {
     background-color: green;
     color: white;
+    padding: 5px;
 }
