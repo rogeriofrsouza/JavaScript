@@ -1,0 +1,11 @@
+body { font: 12pt Arial; }
+
+button { font-size: 12pt; padding: 30px; }
+
+div { margin-top: 20px; }
+
+#green { background-color: lightgreen; }
+
+#yellow { background-color: rgb(240, 223, 131); }
+
+#red { background-color: lightcoral; }
