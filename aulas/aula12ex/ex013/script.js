@@ -18,7 +18,7 @@ function carregar() {
     }
 
     //Data
-    if (mes <= 10){
+    if (mes >= 10){
         msg.innerHTML += `Data: ${dia}/${mes}/${ano}`    
     } else {
         msg.innerHTML += `Data: ${dia}/0${mes}/${ano}`
