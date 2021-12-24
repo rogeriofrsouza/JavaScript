@@ -1,28 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 100%;
+}
+
+html,
 body {
-  background-color: rgb(69, 69, 69);
-  font: 13pt Arial;
+  height: 100%;
+  background-color:#454545;
+  font: 500 1.2rem 'DM Sans', sans-serif;
 }
 
 main {
   background-color: white;
-  width: 500px;
-  padding: 20px;
-  margin: auto;
-  border-radius: 10px;
+  width: 31.25rem;
+  padding: 1.25rem;
+  margin: 4rem auto;
+  border-radius: .75rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.529);
 }
 
-h1 {
-  color: darkgoldenrod;
+.grid {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.title {
   text-align: center;
+  font: 700 2rem 'Poppins', sans-serif;
+  color: #04293A;
 }
 
-h2 {
-  color: darkgoldenrod;
-}
-
-ul {
-  list-style: none;
+.subtitle {
+  color: #064663;
+  font: 500 1.5rem 'Poppins', sans-serif;
 }
 
 a {
@@ -30,6 +45,15 @@ a {
 }
 
 a:hover {
-  color: darkgoldenrod;
+  color: #d4ba22;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.lista {
+  display: grid;
+  gap: 1rem;
 }
