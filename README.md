@@ -1,7 +1,7 @@
 <h1 align="center">JavaScript <img align="center" alt="JavaScript" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"></h1>
 
 <p align="center">
-  <a href="https://rogeriofrsouza.github.io/javascript/" target="_blank">Page</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://rogeriofrsouza.github.io/JavaScript/" target="_blank">Page</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tech-stack">Tech Stack</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -10,7 +10,7 @@
 <br>
 
 <p align="center">
-  <a href="https://rogeriofrsouza.github.io/javascript/" target="_blank">
+  <a href="https://rogeriofrsouza.github.io/JavaScript/" target="_blank">
     <img alt="Mascote Curso em Vídeo" src="images/mascote.png" width="35%">
   </a>
 </p>
