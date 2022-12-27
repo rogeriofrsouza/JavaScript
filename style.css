@@ -8,8 +8,7 @@
   font-size: 100%;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   background-color:#454545;
   font: 500 1.2rem 'DM Sans', sans-serif;
@@ -18,7 +17,7 @@ body {
 main {
   background-color: white;
   width: 31.25rem;
-  padding: 1.25rem;
+  padding: 2rem;
   margin: 4rem auto;
   border-radius: .75rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.529);

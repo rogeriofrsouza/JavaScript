@@ -11,8 +11,7 @@ html {
   height: 100%;
 }
 
-html,
-body {
+html, body {
   background-color:#454545;
   font: 500 1.2rem 'DM Sans', sans-serif;
 }

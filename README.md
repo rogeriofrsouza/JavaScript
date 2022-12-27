@@ -68,4 +68,4 @@ This project is under MIT License. You can check [LICENSE](https://github.com/ro
 
 ---
 
-<p align="center">Made with ♥ by <a href="https://www.linkedin.com/in/rog%C3%A9rio-ferreira-de-souza-556a13127">Rogério Ferreira</a> :wave:</p>
+<p align="center">Made with ♥ by <a href="https://www.linkedin.com/in/rogeriofrsouza">Rogério Ferreira</a> :wave:</p>
